@@ -1,0 +1,29 @@
+It is a restructured extract from the popular communications package: IT++
+		http://itpp.sourceforge.net
+
+
+The main objective of this package is two-fold.
+
+1. Reduce the burden of installation, which is observed to be painful for many.
+
+Details: This perception of a painful installation process especially originates
+due to the option of specialized lapack, blas and mkl modules. From the package
+documentation, these modules appear to be optional but the error messages that
+we finally get are scary and leave a confusion of what happened at the end of the day.
+
+2. Provide an instantly useful package with least overhead on compilation.
+
+Details: Not everyone has a problem with compilation time. More often, the
+problem is a quick start. The popular answer to this is to include full source
+files + header files directly, instead of just headers and then link the
+pre-compiled modules (-litpp for including libitpp.so or libitpp.a) from the
+PATH.
+
+3. A vector-matrix-only package (except for the inverse and the svd)
+
+Details: IT++ has a powerful syntax that is closest to MATLAB and user-friendly.
+Plus the efficiency of implementation is superior and second to none. When all
+that we need is just this utility, it is an OVERKILL to install over 400 files
+in the name of IT++ full package.
+
+The result is a 38 file extract, instead of the total 400+ files.
