@@ -28,13 +28,6 @@
 
 #include <itpp/base/copy_vector.h>
 
-#ifndef _MSC_VER
-#  include <itpp/config.h>
-#else
-#  include <itpp/config_msvc.h>
-#endif
-
-
 namespace itpp
 {
 

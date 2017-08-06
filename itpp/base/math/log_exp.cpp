@@ -27,7 +27,6 @@
  */
 
 #include <itpp/base/math/log_exp.h>
-#include <itpp/base/itcompat.h>
 
 namespace itpp
 {

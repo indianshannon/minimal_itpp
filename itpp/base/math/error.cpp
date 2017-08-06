@@ -28,7 +28,6 @@
 
 #include <itpp/base/math/error.h>
 #include <itpp/base/math/elem_math.h>
-#include <itpp/base/itcompat.h>
 
 
 namespace itpp

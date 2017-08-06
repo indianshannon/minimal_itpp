@@ -28,12 +28,6 @@
 
 #include <itpp/base/mat.h>
 
-#ifndef _MSC_VER
-#  include <itpp/config.h>
-#else
-#  include <itpp/config_msvc.h>
-#endif
-
 //! \cond
 
 namespace itpp

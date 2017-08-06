@@ -108,8 +108,6 @@
 #include <itpp/base/itassert.h>
 #include <itpp/base/itassert.cpp>
 
-#include <itpp/base/ittypes.h>
-
 #include <itpp/base/mat.h>
 #include <itpp/base/mat.cpp>
 

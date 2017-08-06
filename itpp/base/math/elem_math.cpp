@@ -27,7 +27,6 @@
  */
 
 #include <itpp/base/math/elem_math.h>
-#include <itpp/base/itcompat.h>
 
 
 namespace itpp

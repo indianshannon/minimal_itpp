@@ -26,12 +26,6 @@
  * -------------------------------------------------------------------------
  */
 
-#ifndef _MSC_VER
-#  include <itpp/config.h>
-#else
-#  include <itpp/config_msvc.h>
-#endif
-
 #include <itpp/base/vec.h>
 #include <itpp/base/converters.h>
 #include <cstdio>

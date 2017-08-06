@@ -30,8 +30,6 @@
 #define FACTORY_H
 
 #include <complex>
-#include <itpp/base/binary.h>
-#include <itpp/itexports.h>
 
 namespace itpp
 {
@@ -160,14 +158,6 @@ void create_elements<unsigned char>(unsigned char* &ptr, int n,
   ptr = reinterpret_cast<unsigned char*>(p);
 }
 
-//! Specialization for binary data arrays
-template<> inline
-void create_elements<bin>(bin* &ptr, int n, const Factory &)
-{
-  void *p = operator new(sizeof(bin) * n);
-  ptr = reinterpret_cast<bin*>(p);
-}
-
 //! Specialization for short integer data arrays
 template<> inline
 void create_elements<short int>(short int* &ptr, int n, const Factory &)
@@ -234,16 +224,6 @@ void destroy_elements<unsigned char>(unsigned char* &ptr, int)
   }
 }
 
-//! Specialization for binary data arrays
-template<> inline
-void destroy_elements<bin>(bin* &ptr, int)
-{
-  if (ptr) {
-    void *p = reinterpret_cast<void*>(ptr);
-    operator delete(p);
-    ptr = 0;
-  }
-}
 //! Specialization for short integer data arrays
 template<> inline
 void destroy_elements<short int>(short int* &ptr, int)

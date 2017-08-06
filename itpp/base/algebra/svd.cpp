@@ -26,12 +26,6 @@
  * -------------------------------------------------------------------------
  */
 
-#ifndef _MSC_VER
-#  include <itpp/config.h>
-#else
-#  include <itpp/config_msvc.h>
-#endif
-
 #if defined(HAVE_LAPACK)
 #  include <itpp/base/algebra/lapack.h>
 #endif

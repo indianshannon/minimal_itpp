@@ -29,10 +29,8 @@
 #ifndef COPY_VECTOR_H
 #define COPY_VECTOR_H
 
-#include <itpp/base/binary.h>
 #include <complex>
 #include <cstring>
-#include <itpp/itexports.h>
 
 //! \cond
 
@@ -50,10 +48,6 @@ inline void copy_vector(int n, const int *x, int *y)
 inline void copy_vector(int n, const short *x, short *y)
 {
   memcpy(y, x, n * sizeof(short));
-}
-inline void copy_vector(int n, const bin *x, bin *y)
-{
-  memcpy(y, x, n * sizeof(bin));
 }
 
 ITPP_EXPORT void copy_vector(int n, const double *x, double *y);
@@ -98,11 +92,6 @@ inline void swap_vector(int n, short *x, short *y)
   for (int i = 0; i < n; i++)
     std::swap(x[i], y[i]);
 }
-inline void swap_vector(int n, bin *x, bin *y)
-{
-  for (int i = 0; i < n; i++)
-    std::swap(x[i], y[i]);
-}
 
 ITPP_EXPORT void swap_vector(int n, double *x, double *y);
 ITPP_EXPORT void swap_vector(int n, std::complex<double> *x, std::complex<double> *y);
@@ -130,11 +119,6 @@ inline void swap_vector(int n, int *x, int incx, int *y, int incy)
     std::swap(x[i*incx], y[i*incy]);
 }
 inline void swap_vector(int n, short *x, int incx, short *y, int incy)
-{
-  for (int i = 0; i < n; i++)
-    std::swap(x[i*incx], y[i*incy]);
-}
-inline void swap_vector(int n, bin *x, int incx, bin *y, int incy)
 {
   for (int i = 0; i < n; i++)
     std::swap(x[i*incx], y[i*incy]);
